@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅遊訂票首頁</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="navbar">
+        <div class="search-bar">目的地 <span>→</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#" class="highlight">最新優惠</a></li>
+                <li><a href="#">會員登入</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="image/Airplane.jpg" alt="Airplane">
+        </div>
+        <div class="hero-promo">
+            <p>日、韓機票最低只要七折起</p>
+            <p><strong>現在立即訂購!</strong></p>
+        </div>
+    </section>
+
+    <main class="card-container">
+        
+        <div class="card">
+            <img src="image/Japan.jpg" alt="Japan">
+            <div class="card-content">
+                <h2>Japan</h2>
+                <p>大阪、京都、沖繩</p>
+                <a href="#" class="btn">前往訂購 <span>&gt;</span></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/America.jpg" alt="America">
+            <div class="card-content">
+                <h2>America</h2>
+                <p>紐約、洛杉磯、舊金山</p>
+                <a href="#" class="btn">前往訂購 <span>&gt;</span></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/Korea.jpg" alt="Korea">
+            <div class="card-content">
+                <h2>Korea</h2>
+                <p>釜山、首爾、濟州島</p>
+                <a href="#" class="btn">前往訂購 <span>&gt;</span></a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image/Europe.jpg" alt="Europe">
+            <div class="card-content">
+                <h2>Europe</h2>
+                <p>英國、法國、義大利</p>
+                <a href="#" class="btn">前往訂購 <span>&gt;</span></a>
+            </div>
+        </div>
+
+    </main>
+
+  </div>
+
+  <script>
+    document.addEventListener('mousemove', (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      document.body.style.setProperty('--mouse-x', x + 'px');
+      document.body.style.setProperty('--mouse-y', y + 'px');
+    });
+  </script>
+</body>
+</html>
